@@ -1,0 +1,50 @@
+#captcha {
+	background-image: url("../image/1.PNG");
+	background-repeat: no-repeat;
+	background-size: 180px 45px;
+	width: 200px;
+	height: 45px;
+	position: relative;
+	overflow: hidden;
+}
+
+#captcha .char {
+	position: absolute;
+	color: #ffff;
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	top: 10%;
+	transform: translateY(-50%);
+}
+
+#captcha .char[data-char="1"] {
+	left: 10px;
+}
+
+#captcha .char[data-char="2"] {
+	left: 40px;
+}
+
+#captcha .char[data-char="3"] {
+	left: 70px;
+}
+
+#captcha .char[data-char="4"] {
+	left: 100px;
+}
+
+#captcha .char[data-char="5"] {
+	left: 130px;
+}
+
+.char {
+    /* CSS properties for the character */
+    animation: move 1s infinite; /* Add animation to the character */
+}
+
+@keyframes move {
+    0% { transform: translateY(0); }
+    10% { transform: translateX(15px); }
+    100% { transform: translateY(0); }
+}
