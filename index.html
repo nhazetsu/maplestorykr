@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+	<title>MapleStory</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+<style>
+body {
+  background-image: url(image/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+</style>
+<body>
+
+	<h1>MapleStory</h1>
+	<p>Vui lòng nhập các ký tự bạn nhìn thấy trong hình dưới đây:</p>
+	<div id="captcha" data-position="0"></div>
+	<input type="text" id="captchaInput" name="captchaInput">
+	<button type="submit" id="submitBtn">Submit</button>
+	<button onClick="generateCaptcha()">Refresh</button>
+	<div id="result"></div>
+	<script src="js/script.js"></script>
+</body>
+</html>
