@@ -1,5 +1,5 @@
 #captcha {
-	background-image: url("../image/1.PNG");
+	background-image: url(".../image/1.PNG");
 	background-repeat: no-repeat;
 	background-size: 180px 45px;
 	width: 200px;
